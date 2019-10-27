@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>To Do List</title>
+    <link type="text/css" rel="stylesheet" href="src/style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">TO DO LIST</div>
+      <div class="item2">
+        <div id="input_div">
+        <!--<input type="text" id="user_input" placeholder="New Tast Here" autocomplete="off" autocorrect="off" spellcheck="false">-->
+        <textarea rows="2" columns=100" id="user_input" spellcheck="false"></textarea>
+        </div>
+        <div id="button_div">
+        <span><button type="button" id="task_button">Add New Task</button></span>
+        </div>
+      </div>
+      <div class="item3">
+        <p class="tasks">TASKS ON FOLLOW UP</p> 
+        <ul id="follow_up">
+        </ul>
+      </div>
+      <div class="item4">
+        <p class="tasks">TASKS FOR TODAY </p> 
+        <ul id="daily_task">
+        </ul>
+      </div>
+      <div class="item5">
+        <ul>
+          <li> <b>&#x21 CLICK: <button>&#8594</button> to move tasks to the daily follow up list</li>
+          <li> <b>&#x21 CLICK: &#9746 to delete a task</li>
+          <li> <b>&#x21 CLICK: on any task in the daily follow up to mark it as done and remove from list</li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="src/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="src/script.js"></script>
+  </body>
+</html>
